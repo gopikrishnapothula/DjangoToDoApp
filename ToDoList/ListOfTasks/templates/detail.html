@@ -1,0 +1,30 @@
+
+
+{% extends 'home.html' %}
+
+
+
+{% block main %}
+<div class="col-md-6">
+    <div class="p-4 bg-white notes">
+        <div class="topnav">
+            <a href="{% url 'home' %}" > Go Back</a>
+        </div>
+    <div>
+
+
+    <div class="p-3 bg-white">
+    
+        <p><b>Title : </b>{{task.title}}</p>
+        <p><b>Description : </b>{{task.description}}</p>
+        
+        {% if task.complete %}
+        <p><b>Status : </b>Completed</p>
+        {% else %}
+        <p><b>Status : </b>Incomplete</p>
+        {% endif %}
+
+    
+    </div>
+</div>
+{% endblock %}

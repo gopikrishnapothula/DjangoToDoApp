@@ -1,0 +1,73 @@
+<!doctype html>
+                        <html>
+                            <head>
+                                <meta charset='utf-8'>
+                                <meta name='viewport' content='width=device-width, initial-scale=1'>
+                                <title>Snippet - BBBootstrap</title>
+                                <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
+                                <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>
+                                <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+                                <style>::-webkit-scrollbar {
+                                  width: 8px;
+                                }
+                                /* Track */
+                                ::-webkit-scrollbar-track {
+                                  background: #f1f1f1; 
+                                }
+                                 
+                                /* Handle */
+                                ::-webkit-scrollbar-thumb {
+                                  background: #888; 
+                                }
+                                
+                                /* Handle on hover */
+                                ::-webkit-scrollbar-thumb:hover {
+                                  background: #555; 
+                                } body{background-color: blue}.notes{border-top-left-radius: 42px}.dot{height: 6px;width: 6px;margin-left: 8px;margin-right: 3px;margin-top: 2px;background-color: rgb(91, 92, 91);border-radius: 50%;display: inline-block}.review-text{background: red;color: #fff}.info{color: #8c8b9a}.dot-red{background-color: red !important;height: 6px;width: 6px;margin-left: 8px;margin-right: 3px;margin-top: 2px;border-radius: 50%;display: inline-block}.overview{color: red}@keyframes click-wave{0%{height: 40px;width: 40px;opacity: 0.15;position: relative}100%{height: 200px;width: 200px;margin-left: -80px;margin-top: -80px;opacity: 0}}.option-input{-webkit-appearance: none;-moz-appearance: none;-ms-appearance: none;-o-appearance: none;appearance: none;position: relative;top: 10.3px;right: 0;bottom: 0;left: 0;height: 30px;width: 30px;transition: all 0.15s ease-out 0s;background: #cbd1d8;border: none;color: #fff;cursor: pointer;display: inline-block;margin-right: 0.5rem;outline: none;position: relative;z-index: 1000}.option-input:hover{background: #9faab7}.option-input:checked{background: red}.option-input:checked::before{height: 30px;width: 30px;position: absolute;content: "\f111";font-family: "Font Awesome 5 Free";display: inline-block;font-size: 16.7px;text-align: center;line-height: 30px}.option-input:checked::after{-webkit-animation: click-wave 0.25s;-moz-animation: click-wave 0.25s;animation: click-wave 0.25s;background: red;content: '';display: block;position: relative;z-index: 100}.option-input.radio{border-radius: 50%}.option-input.radio::after{border-radius: 50%}.completed{color: gray;text-decoration: line-through}.line-text{width: 100%;text-align: center;border-bottom: 1px solid #eee;line-height: 0.1em;margin: 10px 0 20px}.line-text span{background: #fff;padding: 0 10px;color: #212529}.user-images img{margin-left: -5px}</style>
+                                </head>
+                                <body className='snippet-body'>
+                                <div class="container mt-5">
+    <div class="d-flex justify-content-center row">
+        <div class="col-md-6">
+            <div class="p-4 bg-white notes">
+                <div class="d-flex flex-row align-items-center notes-title">
+                    <h4>Team Meeting</h4><span class="px-2 review-text ml-2 rounded">vital</span>
+                </div>
+                <div class="d-flex flex-row align-items-center align-content-center"><span class="rounded info">04/01/2020</span><span class="dot"></span><span class="info ml-1">ML - 1321</span></div>
+            </div>
+            <div class="p-3 bg-white">
+                <div class="d-flex align-items-center"><label><input type="checkbox" class="option-input radio"><span class="label-text">Task list and assignments</span></label></div>
+                <div class="d-flex align-items-center"><label><input type="checkbox" class="option-input radio"><span class="label-text">Set due date and assignments</span></label></div>
+                <div class="d-flex align-items-center"><label><input type="checkbox" class="option-input radio"><span class="label-text">Remove duplicate tasks and stories</span></label></div>
+                <div class="d-flex align-items-center"><label><input type="checkbox" class="option-input radio"><span class="label-text">Update the userflow and stories</span></label></div>
+                <div class="d-flex align-items-center"><label><input type="checkbox" class="option-input radio"><span class="label-text">Adjust the components</span></label></div>
+            </div>
+            <div class="p-2 bg-white">
+                <h6 class="line-text"><span>Shared with</span></h6>
+            </div>
+            <div class="d-flex justify-content-center p-2 bg-white user-images"><img class="rounded-circle" src="https://i.imgur.com/rQMmlf6.jpg" width="40"><img class="rounded-circle" src="https://i.imgur.com/zE0TPlF.jpg" width="40"><img class="rounded-circle" src="https://i.imgur.com/rCAhOXi.jpg" width="40"><img class="rounded-circle" src="https://i.imgur.com/28GMrS0.jpg" width="40"></div>
+        </div>
+    </div>
+</div>
+                                <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js'></script>
+                                <script type='text/javascript' src='#'></script>
+                                <script type='text/javascript' src='#'></script>
+                                <script type='text/javascript' src='#'></script>
+                                <script type='text/javascript'>$(document).ready(function() {
+  $('input[type=checkbox]').change(function() {
+   
+    if (this.checked) {
+      $(this).next(".label-text").css("text-decoration-line", "line-through");
+    } else {
+       $(this).next(".label-text").css("text-decoration-line", "none");
+    }
+
+  });
+});</script>
+                                <script type='text/javascript'>var myLink = document.querySelector('a[href="#"]');
+                                myLink.addEventListener('click', function(e) {
+                                  e.preventDefault();
+                                });</script>
+                            
+                                </body>
+                            </html>

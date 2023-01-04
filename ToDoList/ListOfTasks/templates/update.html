@@ -1,0 +1,21 @@
+{% extends 'home.html' %}
+
+
+
+{% block main %}
+<div class="col-md-6">
+    <div class="p-4 bg-white notes">
+        <div class="topnav">
+            <a href="{% url 'home' %}" > Go Back</a>
+        </div>
+    <div>
+        <div class="p-3 bg-white">
+    <form method="POST" action="">
+    {%csrf_token%}
+    {{form.as_p}}
+
+    <input type="submit" value="Submit">
+    </form>
+        </div>
+</div>
+{% endblock %}
